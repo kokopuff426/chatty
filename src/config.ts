@@ -12,11 +12,8 @@ class Config {
   public CLIENT_URL: string | undefined;
   public REDIS_HOST: string | undefined;
 
-  private readonly DEFAULT_DATABASE_URL =
-    'mongodb+srv://kkamata:jt9CdJpiehtqyQoS@chatty-backend.8qii3rp.mongodb.net/?retryWrites=true&w=majority';
-
   constructor() {
-    this.DATABASE_URL = process.env.DATABASE_URL || this.DEFAULT_DATABASE_URL;
+    this.DATABASE_URL = process.env.DATABASE_URL || '';
     this.JWT_TOKEN = process.env.JWT_TOKEN || '1234';
     this.NODE_ENV = process.env.NODE_ENV || '';
     this.SECRET_KEY_ONE = process.env.SECRET_KEY_ONE || '';

@@ -31,7 +31,7 @@ export abstract class CustomError extends Error {
 }
 
 export class JoiRequestValidationError extends CustomError {
-  statusCode = HTTP_STATUS.SERVICE_UNAVAILABLE;
+  statusCode = HTTP_STATUS.BAD_REQUEST;
   status = 'error';
 
   constructor(message: string) {

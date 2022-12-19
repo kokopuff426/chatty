@@ -21,7 +21,7 @@ export class SignIn {
 
     const passwordsMatch: boolean = await existingUser.comparePassword(password);
     if (!passwordsMatch) {
-      throw new BadRequestError('Invalud credentials');
+      throw new BadRequestError('Invalid credentials');
     }
 
     const user: IUserDocument = await userService.getUserByAuthId(`${existingUser._id}`);
@@ -46,6 +46,7 @@ export class SignIn {
       uId: existingUser!.uId,
       createdAt: existingUser!.createdAt
     } as IUserDocument;
+
     res.status(HTTP_STATUS.OK).json({ message: 'User login successfully', user: userDocument, token: userJwt });
   }
 }

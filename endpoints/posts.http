@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:5000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/post
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "post": "This is a random post",
+  "bgColor": "#ffffff",
+  "privacy": "Public",
+  "gifUrl": "",
+  "profilePicture": "https://res.cloudinary.com/alegria/image/upload/v1670685326/6394a28d7a498c4837fbf523.jpg",
+  "feelings": "happy"
+}
+
+###
+POST {{baseUrl}}/{{urlPath}}/post/image/post
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "post": "This is my second post",
+  "bgColor": "#ffffff",
+  "privacy": "Privacy",
+  "gifUrl": "",
+  "profilePicture": "https://res.cloudinary.com/alegria/image/upload/v1670685326/6394a28d7a498c4837fbf523.jpg",
+  "feelings": "sad",
+  "image": "https://res.cloudinary.com/alegria/image/upload/v1670685326/6394a28d7a498c4837fbf523.jpg"
+}

@@ -8,7 +8,7 @@ Accept: application/json
 withCredentials: true
 
 {
-  "username": "koki",
+  "username": "kkamata",
   "password": "password",
   "email": "koki@test.com",
   "avatarColor": "red",
@@ -22,8 +22,8 @@ Accept: application/json
 withCredentials: true
 
 {
-  "username": "koki",
-  "password": "secret"
+  "username": "kkamata",
+  "password": "password"
 }
 
 ###

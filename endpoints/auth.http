@@ -22,7 +22,7 @@ Accept: application/json
 withCredentials: true
 
 {
-  "username": "george",
+  "username": "koki",
   "password": "password"
 }
 

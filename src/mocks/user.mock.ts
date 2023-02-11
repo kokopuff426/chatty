@@ -86,7 +86,7 @@ export const existingUserTwo = {
   _id: '60263f14648fed5246e322d8',
   uId: '1621613119252065',
   username: 'Danny',
-  email: 'danny@me.com',
+  email: 'manny@me.com',
   avatarColor: '#9c27b1',
   work: 'KickChat Inc.',
   school: 'University of Benin',

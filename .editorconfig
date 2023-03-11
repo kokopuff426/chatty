@@ -11,7 +11,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # Styles for ts and js files
-[*.{ts, js}]
+[*.{ts,js}]
 quote_type = single
 
 # Styles for markdown files
